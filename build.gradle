@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.dhlattanzio'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation group: 'org.json', name: 'json', version: '20210307'
+    implementation group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+}
+
+test {
+    useJUnitPlatform()
+}
