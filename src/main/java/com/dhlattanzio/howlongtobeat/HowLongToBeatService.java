@@ -16,6 +16,8 @@ public class HowLongToBeatService {
 
     public float gameTimeStringToFloat(String gameTime) {
         String[] splitted = gameTime.split(" ");
+        if (splitted.length<2) return -1;
+
         boolean isMinutes = splitted[1].equalsIgnoreCase("Mins");
         
         String timeValue = splitted[0].replace("\u00bd", ".5");
