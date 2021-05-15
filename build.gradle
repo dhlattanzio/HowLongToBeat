@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
 group 'com.dhlattanzio'
@@ -12,7 +12,6 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    implementation group: 'org.json', name: 'json', version: '20210307'
     implementation group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
 }
 
